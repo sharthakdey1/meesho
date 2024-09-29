@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b131ba91e8.js" crossorigin="anonymous"></script>
+    <style>
+        .n1{
+            display: flex;
+            justify-content: space-around;
+            height: 5.7vh;
+        }
+        .n1 h2{
+            margin-top: 0%;
+            display: inline;
+            color: purple;
+        }
+        .n1 input{
+            width: 25vw;
+            height: 5vh;
+            
+        }
+        #logo1{
+            display: flex;
+            gap: 40px;
+        }
+        .but1 button{
+            width: 15vw;
+            height: 5vh;
+            border: none;
+            border-right: 2px solid grey;
+            background-color: white;
+        }
+        .n1 i,a{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+        }
+        #n2 button{
+            width: 10vw;
+            border: none;
+            background-color: white;
+            margin-right: 0%;
+            }
+        .bhool{
+            width: 16%;
+            border: 1px solid rgb(213, 212, 212);
+            padding: 10px;
+        }
+        
+
+        .prod #search{
+            height: 4vh;
+            margin: 10px;
+        }
+        .prod select{
+            height: 4vh;
+            margin: 10px; 
+        }
+        #sort{
+            height: 5vh;
+            margin-left: 2px; 
+            width: 34vh;
+        }
+        main{
+            display: flex;
+            justify-content: space-around;
+        }
+        .products div{
+            width: 90%;
+            border: 2px solid;
+            /* text-align: center;<span style:"color: grey">onwards</span> */
+            padding-left: 2%;
+            margin-left: 4%;
+            margin-top: 2%;
+        }
+        .products{
+            display: grid;
+            
+            grid-template-areas: "a b c d"
+                                "e f g h";
+
+        }
+        .products div p:nth-of-type(2){
+            background-color: rgba(179, 179, 176, 0.232);
+            width: 40%;
+            color: gray;
+            border-radius: 5px;
+        }
+        .products div p:nth-of-type(3){
+            background-color: rgba(44, 158, 44, 0.993);
+            width: 20%;
+            padding: 2%;
+            color: white;
+            border-radius: 5px;}
+        img{
+            width: 100%;
+        }
+        .products div:nth-of-type(1){
+            grid-area: a;
+        }
+        .products div:nth-of-type(1){
+            grid-area: b;
+        }
+        .products div:nth-of-type(1){
+            grid-area: c;
+        }
+        .products div:nth-of-type(1){
+            grid-area: d;
+        }
+        .products div:nth-of-type(1){
+            grid-area: e;
+        }
+        .products div:nth-of-type(1){
+            grid-area: f;
+        }
+        .products div:nth-of-type(1){
+            grid-area: g;
+        }
+        .products div:nth-of-type(1){
+            grid-area: h;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="n1">
+            <div id="logo1">
+                <h2>meesho</h2>
+                <input type="text" name="" id="search" placeholder="Try Saree,Kurti or Search by Product Code">
+            </div>
+            <div class="but1">
+                <button>Download App</button>
+                <button>Become a Supplier</button>
+                <button>Newsroom</button>
+            </div> 
+            
+            <div>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="">profile</a>
+            </div>
+            <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="">cart</a>
+            </div>
+            
+        </nav>
+        <hr>
+        <nav id="n2">
+            <div>
+                <button>Women Ethnic</button>
+                <button>Women Western</button>
+                <button>Men</button>
+                <button>Kids</button>
+                <button>Home & Kitchen</button>
+                <button>Beauty & Kitchen</button>
+                <button>Jewellery & Accesories </button>
+                <button>Bags & Footwear</button>
+                <button>Electronics</button>
+            </div>
+        </nav>
+        <hr>
+        
+    </header>
+    <main>
+        <div class="bhool">
+            <h2>Products For You</h2>
+            
+                <select name="" id="sort" >
+                <option value=""><span style="color: grey;">Sort by:</span> <b>Relevance</b></option>
+                </select><br>
+                <br>
+            <div class="prod">
+                <p><b>FILTERS</b></p>
+                <P style="color: grey;">1000+ Products</P>
+                <hr>
+                <p><b>Category</b></p>
+            
+                </select>
+                <input type="text" placeholder="search" id="search">
+                <p><input type="checkbox"> Women T-shirts </p>
+                <p><input type="checkbox">Women Tops And Tunics</p>
+                <p> <input type="Checkbox">Bedsheets</p>
+                <p><input type="checkbox">Bike Covers</p>
+                <p><input type="checkbox">Blouses</p>
+                <input type="checkbox">Cups & Mugs 
+                <p><input type="checkbox">Dupattas</p>
+                <p><input type="checkbox">Earrings & studs</p>
+            </div>
+        </div>
+        <div class="products">
+            <div>
+                <img src="https://images.meesho.com/images/products/401105669/slz96_400.webp" alt="">
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> 133 <span style="color: gray">onwards</span></p>
+                <p>Free Delhivery</p>
+                <p>3.7<i class="fa-regular fa-star"></i></p>
+            </div>
+            <div>
+                <img src="https://images.meesho.com/images/products/401105669/slz96_400.webp" alt="">
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> 133 <span style="color: gray">onwards</span></p>
+                <p>Free Delhivery</p>
+                <p>3.7<i class="fa-regular fa-star"></i></p>
+            </div>
+            <div>
+                <img src="https://images.meesho.com/images/products/401105669/slz96_400.webp" alt="">
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> 133 <span style="color: gray">onwards</span></p>
+                <p>Free Delhivery</p>
+                <p>3.7<i class="fa-regular fa-star"></i></p>
+            </div>
+            <div>
+                <img src="https://images.meesho.com/images/products/401105669/slz96_400.webp" alt="">
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> 133 <span style="color: gray">onwards</span></p>
+                <p>Free Delhivery</p>
+                <p>3.7<i class="fa-regular fa-star"></i></p>
+            </div>
+            <div>
+                <img src="https://images.meesho.com/images/products/401105669/slz96_400.webp" alt="">
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> 133 <span style="color: gray">onwards</span></p>
+                <p>Free Delhivery</p>
+                <p>3.7<i class="fa-regular fa-star"></i></p>
+            </div>
+            <div>
+                <img src="https://images.meesho.com/images/products/401105669/slz96_400.webp" alt="">
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> 133 <span style="color: gray">onwards</span></p>
+                <p>Free Delhivery</p>
+                <p>3.7<i class="fa-regular fa-star"></i></p>
+            </div>
+            <div>
+                <img src="https://images.meesho.com/images/products/401105669/slz96_400.webp" alt="">
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> 133 <span style="color: gray">onwards</span></p>
+                <p>Free Delhivery</p>
+                <p>3.7<i class="fa-regular fa-star"></i></p>
+            </div>
+            <div>
+                <img src="https://images.meesho.com/images/products/401105669/slz96_400.webp" alt="">
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> 133 <span style="color: gray">onwards</span></p>
+                <p>Free Delhivery</p>
+                <p>3.7<i class="fa-regular fa-star"></i></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
